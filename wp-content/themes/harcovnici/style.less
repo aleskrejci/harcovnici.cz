@@ -978,9 +978,6 @@ object {
   --zluta2: #BA9D00;
   --zelena: #019B00;
   --zelena2: #005D00;
-  /*  AKTUÁLNÍ BAREVNOST (VIZ VÝŠE) */
-  --zvyraznovaci: #ECC500;
-  --sekundarni: #BA9D00;
 }
 
 body {
@@ -991,6 +988,35 @@ body {
   font: 16px Effra, Helvetica, sans-serif;
 }
 
+
+.colorJanuary, .colorFebruary, .colorMarch, .colorApril {
+  --zvyraznovaci: var(--cervena);
+  --sekundarni: var(--cervena2);
+
+  .site-branding {
+    background-image: url(header-vrstevnice1.svg);
+  }
+}
+
+.colorMay, .colorJune, .colorJuly, .colorAugust {
+  --zvyraznovaci: var(--zluta);
+  --sekundarni: var(--zluta2);
+
+  .site-branding {
+    background-image: url(header-vrstevnice2.svg);
+  }
+}
+
+.colorSeptember, .colorOctober, .colorNovember, .colorDecember {
+  --zvyraznovaci: var(--zelena);
+  --sekundarni: var(--zelena2);
+
+  .site-branding {
+    background-image: url(header-vrstevnice3.svg);
+  }
+}
+
+
 #content {
   background-image: url(mainbg-cesta.svg);
   background-position: center top;
@@ -1000,7 +1026,6 @@ body {
 
 .site-branding {
   width: 100%;
-  background: url(header-vrstevnice.svg);
   background-color: var(--sekundarni);
   background-position: center;
   background-size: cover;
