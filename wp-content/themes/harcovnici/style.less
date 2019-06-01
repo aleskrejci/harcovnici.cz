@@ -346,6 +346,11 @@ big {
 
 html {
   box-sizing: border-box;
+  min-height: 100vh;
+  background-image: url(mainbg-cesta.svg);
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
 }
 
 *,
@@ -353,11 +358,6 @@ html {
 *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit;
-}
-
-body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -984,7 +984,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: white;
   font: 16px Effra, Helvetica, sans-serif;
 }
 
@@ -1014,14 +1013,6 @@ body {
   .site-branding {
     background-image: url(header-vrstevnice3.svg);
   }
-}
-
-
-#content {
-  background-image: url(mainbg-cesta.svg);
-  background-position: center top;
-  background-size: 100% auto;
-  background-repeat: repeat-y;
 }
 
 .site-branding {
