@@ -1225,3 +1225,30 @@ article:nth-child(even) {
     background-color: #ededed;
   }
 }
+
+@media print {
+  * {
+    color: black;
+  }
+
+  html {
+    background: none;
+  }
+
+  .site-header, .post-navigation {
+    display: none;
+  }
+
+  #primary {
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    word-wrap: break-word;
+  }
+
+  a:after {
+    content: " [" attr(href) "]";
+  }
+}
