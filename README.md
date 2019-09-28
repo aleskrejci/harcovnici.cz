@@ -1,2 +1,2 @@
 # Harcovníci.cz
-WordPress šablona na základě [Underscores](https://underscores.me).
+WordPress šablona na základě [Blankslate](https://github.com/tidythemes/blankslate).

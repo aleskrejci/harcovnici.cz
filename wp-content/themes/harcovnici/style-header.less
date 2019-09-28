@@ -1,0 +1,30 @@
+// main:style.less
+// Colored header
+
+#branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: var(--secondary);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 600px) {
+    height: 130px;
+  }
+
+  #site-title {
+    text-align: center;
+    text-transform: lowercase;
+  
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 55px;
+    }
+  }
+}

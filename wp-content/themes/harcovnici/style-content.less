@@ -1,0 +1,97 @@
+// main:style.less
+// Content
+
+#container {
+  padding: 6rem 0;
+  width: 100%;
+}
+#content {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 90%;
+}
+
+.home .post {
+  margin: 0 auto 6rem;
+  width: 100%;
+
+  &:nth-child(odd) {
+    padding-right: 30%;
+    transform: rotate(-2deg);
+
+    @media (max-width: 600px) {
+      padding-right: 0;
+    }
+  }
+  
+  &:nth-child(even) {
+    padding-left: 30%;
+    transform: rotate(1deg);
+
+    @media (max-width: 600px) {
+      padding-left: 0;
+    }
+  }
+}
+
+h2 { // Entry header
+  margin-bottom: 0.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.25rem;
+  line-height: 1.4em;
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--primary);
+    }
+  }
+}
+
+.page, .single {
+  h2 {
+    margin-bottom: 1em;
+  }
+}
+
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.4em;
+}
+
+h4 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4em;
+}
+
+.entry-content {
+  margin: 0 auto;
+  width: 90%;
+
+  p, ul, ol {
+    margin-bottom: 2rem;
+  }
+
+  hr {
+    margin: 2rem auto 2rem;
+    height: 2px;
+    border: none;
+    background-color: var(--light-grey);
+  }
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}

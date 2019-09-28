@@ -1,0 +1,80 @@
+// main:style.less
+// General & variables
+
+:root {
+  --red1: #CA0000;
+  --red2: #7B0000;
+  --yellow1: #ECC500;
+  --yellow2: #BA9D00;
+  --green1: #019B00;
+  --green2: #005D00;
+  --light-grey: #EDEDED;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+.colorJanuary, .colorFebruary, .colorMarch, .colorApril {
+  --primary: var(--red1);
+  --secondary: var(--red2);
+
+  #branding {
+    background-image: url(img/header-bg-1.svg);
+  }
+}
+
+.colorMay, .colorJune, .colorJuly, .colorAugust {
+  --primary: var(--yellow1);
+  --secondary: var(--yellow2);
+
+  #branding {
+    background-image: url(img/header-bg-2.svg);
+  }
+}
+
+.colorSeptember, .colorOctober, .colorNovember, .colorDecember {
+  --primary: var(--green1);
+  --secondary: var(--green2);
+
+  #branding {
+    background-image: url(img/header-bg-3.svg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100vh;
+  background-image: url(img/body-bg.svg);
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  color: black;
+  font-size: 16px;
+  font-family: Effra, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.85;
+  scroll-behavior: smooth; // smooth #anchors
+  -webkit-text-size-adjust: 100%; // stops iOS from resizing text all willy-nilly
+}
+
+body {
+  min-width: 320px;
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+  transition: color ease-in-out 0.3s;
+
+  &:focus,
+  &:hover {
+    color: var(--primary);
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,51 @@
+// main:style.less
+// Footer
+
+.nav-links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 6rem;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    width: 6px;
+    height: 16rem;
+    background: linear-gradient(to top, rgba(237,237,237,0) 0%,rgba(237,237,237,1) 100%);
+    content: "";
+  }
+}
+
+.nav-previous + .nav-next {
+  margin-top: 1rem;
+}
+
+.nav-previous,
+.nav-next {
+  z-index: 99;
+
+  a {
+    display: block;
+    padding: 15px 20px;
+    border: solid 2px var(--primary);
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: background-color 150ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      border: solid 2px var(--secondary);
+      background-color: var(--primary);
+      color: black;
+    }
+  }
+}

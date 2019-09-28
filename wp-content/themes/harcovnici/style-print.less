@@ -1,0 +1,31 @@
+// main:style.less
+// Print
+
+@media print {
+  * {
+    background: none;
+    background-image: none;
+    color: black;
+  }
+
+  html {
+    background: none;
+  }
+
+  #header, .navigation {
+    display: none;
+  }
+
+  #content {
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    word-wrap: break-word;
+  }
+
+  .entry-content a:after {
+    content: " [" attr(href) "]";
+  }
+}
