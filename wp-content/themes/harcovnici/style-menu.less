@@ -1,10 +1,11 @@
 // main:style.less
 // Menu
 
-ul.menu {
+#menu ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  overflow-y: hidden; // because of the transform effect on a:hover
   width: 100%;
   border-top: 1px solid var(--light-grey);
   border-bottom: 1px solid var(--light-grey);
@@ -14,7 +15,7 @@ ul.menu {
   font-size: 12px;
 
   @media (max-width: 460px) {
-    overflow: auto;
+    overflow-x: auto;
     justify-content: initial;
     white-space: nowrap;
   }
@@ -32,23 +33,21 @@ ul.menu {
     padding: 1rem 0;
     color: black;
     text-decoration: none;
-    transition: padding 200ms ease-in-out;
-    
+    transition: transform 200ms ease-in-out;
+
     &:hover,
     &:focus {
-      padding-top: ~"calc(1rem - 2px)";
-      padding-bottom: ~"calc(1rem + 2px)";
+      transform: rotate(-3deg) scale(1.1);
     }
   }
 
   .current-menu-item a {
-    padding-bottom: ~"calc(1rem - 2px)";
+    padding-bottom: ~"calc(1rem - 4px)";
     border-bottom: 4px solid var(--primary);
 
     &:hover,
     &:focus {
-      padding-top: ~"calc(1rem - 2px)";
-      padding-bottom: 1rem;
+      transform: none;
     }
   }
 }
