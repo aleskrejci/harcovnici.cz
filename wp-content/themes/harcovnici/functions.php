@@ -125,12 +125,6 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 add_filter( 'emoji_svg_url', '__return_false' );
 
-// Block the Gutenberg editor from injecting its own CSS
-function remove_gutenberg_styles() {
-  wp_dequeue_style( 'wp-block-library' );
-}
-add_action( 'wp_enqueue_scripts', 'remove_gutenberg_styles', 100 );
-
 // Disable "wp-embed.min.js"
 function remove_wpembed_js() {
   wp_dequeue_script( 'wp-embed' );
