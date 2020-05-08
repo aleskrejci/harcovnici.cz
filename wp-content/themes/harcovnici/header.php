@@ -5,6 +5,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="initial-scale=1.0" />
 <meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); echo '?v=' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" />
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
