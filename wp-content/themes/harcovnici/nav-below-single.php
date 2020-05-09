@@ -1,5 +1,5 @@
 <?php $args = array(
-'prev_text' => '<span class="meta-nav">&larr;</span> %title',
-'next_text' => '%title <span class="meta-nav">&rarr;</span>'
+'prev_text' => '%title',
+'next_text' => '%title'
 );
-the_post_navigation( $args ); ?>
+the_post_navigation( $args );
