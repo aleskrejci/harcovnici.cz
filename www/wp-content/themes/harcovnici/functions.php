@@ -110,3 +110,6 @@ function remove_wpembed_js()
   wp_dequeue_script('wp-embed');
 }
 add_action('wp_footer', 'remove_wpembed_js');
+
+// Disable auto-update email notifications for plugins
+add_filter('auto_plugin_update_send_email', '__return_false');
