@@ -84,34 +84,40 @@ h4 {
   margin: 0 auto;
   width: 90%;
 
-  p,
-  ul,
-  ol {
+  p {
     margin-bottom: 2rem;
   }
 
+  // Lists
   p + ol,
   p + ul {
     margin-top: -1.5rem;
   }
 
-  ul {
-    list-style-type: none;
-
-    li {
-      position: relative;
-
-      &::before {
-        content: '\2022'; // bullet point
-        position: absolute;
-        left: -1em;
-        opacity: 0.33;
-      }
-    }
+  > ol,
+  > ul {
+    margin-bottom: 2rem;
   }
 
-  li + li {
-    margin-top: 0.25em;
+  li {
+    margin: 0.5rem 0 0.5rem 1rem;
+  }
+
+  // Different list styles
+  ul li {
+    list-style-type: disc;
+  }
+
+  li ul li {
+    list-style-type: circle;
+  }
+
+  ol li {
+    list-style-type: decimal;
+  }
+
+  ol li ol li {
+    list-style-type: lower-latin;
   }
 
   hr {
