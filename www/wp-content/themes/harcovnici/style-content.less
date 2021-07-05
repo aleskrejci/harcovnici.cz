@@ -35,13 +35,12 @@
   }
 }
 
-// Entry header
-h2 {
+.entry-title {
   margin-bottom: 0.25rem;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.125em;
-  font-size: 1.0625rem;
+  letter-spacing: 0.07em;
+  font-size: 1.222rem;
   line-height: 1.4em;
 
   a {
@@ -52,13 +51,20 @@ h2 {
       color: var(--primary);
     }
   }
-}
 
-.page,
-.single {
-  h2 {
+  .page &,
+  .single & {
     margin-bottom: 1em;
   }
+}
+
+h2 {
+  margin-bottom: 0.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 1.0625rem;
+  line-height: 1.4em;
 }
 
 h3 {
