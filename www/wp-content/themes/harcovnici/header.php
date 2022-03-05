@@ -42,7 +42,7 @@
           <path d="m523.8 22.7c-8.6-2.4-19.3-2.8-26.6 3.5-2 1.7-7.4 6.7-7.8 9.4-.6 4.4 5 7.3 7.9 9.6 6.9 5.6 9.3 4.7 17.7 1.2s45-7 40.5-21.6c-1.9-6 8.6-23.2-1.8-28.2-7.3-3.6-11.2 20.1-16.3 22.7-2.3 1.1-11.1 4.1-13.6 3.4z" />
         </svg>
         <div id="site-title">
-          <h1><a href="<?php echo esc_url(home_url('/')); ?>" title="Harcovníci" rel="home">Harcovníci</a></h1>
+          <?php if (is_front_page() || is_home() || is_front_page() && is_home()) { echo '<h1>'; } ?><a href="<?php echo esc_url(home_url('/')); ?>" rel="home">Harcovníci</a><?php if (is_front_page() || is_home() || is_front_page() && is_home()) { echo '</h1>'; } ?>
         </div>
       </div>
       <nav id="menu">

@@ -2,7 +2,7 @@
 <main id="content">
   <header class="header">
     <?php the_post(); ?>
-    <h2 class="entry-title author"><?php the_author_link(); ?></h2>
+    <h1 class="entry-title author"><?php the_author_link(); ?></h1>
     <div class="archive-meta"><?php if ('' != get_the_author_meta('user_description')) {
                                 echo esc_html(get_the_author_meta('user_description'));
                               } ?></div>

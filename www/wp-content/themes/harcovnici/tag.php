@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main id="content">
   <header class="header">
-    <h2 class="entry-title"><?php single_term_title(); ?></h2>
+    <h1 class="entry-title"><?php single_term_title(); ?></h1>
     <div class="archive-meta"><?php if ('' != the_archive_description()) {
                                 echo esc_html(the_archive_description());
                               } ?></div>
