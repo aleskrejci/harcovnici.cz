@@ -3,6 +3,7 @@
 
 www/*
 !www/fotky/
+!www/prihlasky/
 !www/wp-content/
 www/wp-content/*
 

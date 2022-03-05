@@ -3,9 +3,9 @@
 // Source: https://www.andrewroberts.net/2017/05/create-pdf-rows-google-sheet/
 
 // Config
-var TEMPLATE_ID = '1uyuw-qDRtbHZlYQxVC4jvtHi8CE4oMfaAWJSYLKTO34';
-var RESULTS_FOLDER_ID = '1uDIdfoXchDCvxH15LUC3MCsqRz4bInvR';
-var FILE_NAME_COLUMN_NAME = 'Celé jméno harcovníka';
+var TEMPLATE_ID = '14qUgX4gsSTfDdmZZxGQ-fUJ8OFvz_2UI3qXiXDqagLY';
+var RESULTS_FOLDER_ID = '1YwE-wK1AETLW1JQsFCwg3QvygGvvnIBW';
+var FILE_NAME_COLUMN_NAME = 'Příjmení a jméno harcovníka';
 var DATE_FORMAT = 'dd.MM.yyyy';
 
 // Eventhandler for spreadsheet opening - add a menu.
