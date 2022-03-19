@@ -1,13 +1,26 @@
 // General & variables
 
 :root {
+  --bg: #ffffff;
+  --text: #303030;
+  --text-highlight: #000000;
+  --light-grey: #ededed;
+
   --red1: #ca0000;
   --red2: #7b0000;
   --yellow1: #ecc500;
   --yellow2: #ba9d00;
   --green1: #019b00;
   --green2: #005d00;
-  --light-grey: #ededed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1d1d;
+    --text: #dbdbdb;
+    --text-highlight: #ffffff;
+    --light-grey: #414141;
+  }
 }
 
 .screen-reader-text {
@@ -47,11 +60,12 @@
 
 html {
   min-height: 100vh;
+  background-color: var(--bg);
   background-image: url(img/body-bg.svg);
   background-position: center top;
   background-size: 105% auto;
   background-repeat: repeat-y;
-  color: black;
+  color: var(--text);
   font-size: 18px;
   font-weight: 400;
   font-family: 'Nunito Sans', system-ui, -apple-system, BlinkMacSystemFont,
@@ -69,7 +83,7 @@ body {
 }
 
 a {
-  color: black;
+  color: var(--text-highlight);
   text-decoration: underline;
   transition: color ease-in-out 0.3s;
 
