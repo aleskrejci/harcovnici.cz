@@ -1,6 +1,6 @@
 <!-- KAM TO LEZEŠ, HARCOVNÍKU! NECHCEŠ PŘILOŽIT RUKU K DÍLU? https://github.com/aleskrejci/harcovnici.cz -->
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> class="color<?php echo date("F"); ?>">
+<html <?php language_attributes(); ?> class="color<?php srand(date('Ym')); echo rand(1, 3); ?>">
 
 <head>
   <meta charset="<?php bloginfo('charset'); ?>" />
