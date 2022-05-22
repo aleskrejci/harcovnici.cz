@@ -114,7 +114,7 @@ add_action('wp_footer', 'remove_wpembed_js');
 // Disable auto-update email notifications for plugins
 add_filter('auto_plugin_update_send_email', '__return_false');
 
-// TODO: Add fallback og:image via Jetpack filter. Doesn't work right now, temporarily solved directly via `header.php`.
-// add_filter( 'jetpack_open_graph_image_default', function() {
-//     return 'https://harcovnici.cz/wp-content/themes/harcovnici/img/ogimage.png';
-// });
+// Add fallback og:image via Jetpack. Needs additional plugin because Jetpack keeps disabling its og:tags... https://cs.wordpress.org/plugins/always-use-jetpack-open-graph/
+add_filter( 'jetpack_open_graph_image_default', function() {
+    return 'https://harcovnici.cz/wp-content/themes/harcovnici/img/ogimage.png';
+});
