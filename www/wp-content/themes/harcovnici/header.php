@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url');
                                                 echo '?v=' . filemtime(get_stylesheet_directory() . '/style.css'); ?>" />
   <?php wp_head(); ?>
+  <meta property="og:image" content="https://harcovnici.cz/wp-content/themes/harcovnici/img/ogimage.png">
 </head>
 
 <body <?php body_class(); ?>>
