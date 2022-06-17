@@ -9,6 +9,8 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url');
                                                 echo '?v=' . filemtime(get_stylesheet_directory() . '/style.css'); ?>" />
   <?php wp_head(); ?>
+  <meta property="og:image" content="https://harcovnici.cz/wp-content/themes/harcovnici/img/ogimage-<?php srand(get_the_date('ymd')); echo rand(1, 3); ?>.png" />
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body <?php body_class(); ?>>
