@@ -1,0 +1,5 @@
+Sitemap: https://harcovnici.cz/sitemap.xml
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /fotky/
+Allow: /wp-admin/admin-ajax.php
