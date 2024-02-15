@@ -10,7 +10,6 @@
             the_post_thumbnail();
           } ?>
       <?php the_content(); ?>
-      <div class="entry-links"><?php wp_link_pages(); ?></div>
     </div>
   </article>
   <?php if (comments_open() && !post_password_required()) {

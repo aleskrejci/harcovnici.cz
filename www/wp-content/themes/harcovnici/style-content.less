@@ -1,43 +1,56 @@
 // Content
 
 #container {
-  padding: 6rem 0;
-  width: 100%;
+  width: 90%;
+  max-width: 640px;
+  margin: 6rem auto;
+
+  @media (max-width: 600px) {
+    margin: 4rem auto;
+  }
 }
 
 #content {
-  display: block;
-  margin: 0 auto;
-  max-width: 700px;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+
+  @media (max-width: 600px) {
+    gap: 4rem;
+  }
 }
 
 .home .post {
-  margin: 0 auto 6rem;
-  width: 100%;
+  width: 70%;
 
   &:nth-child(odd) {
-    padding-right: 30%;
+    align-self: flex-start;
     transform: rotate(-2deg);
 
     @media (max-width: 600px) {
-      padding-right: 0;
+      width: 100%;
     }
   }
 
   &:nth-child(even) {
-    padding-left: 30%;
+    align-self: flex-end;
     transform: rotate(1deg);
 
     @media (max-width: 600px) {
-      padding-left: 0;
+      width: 100%;
     }
+  }
+
+  .entry-summary {
+    text-align: center;
+    text-wrap: balance;
   }
 }
 
 .entry-title {
   margin-bottom: 0.25rem;
   text-align: center;
+  text-wrap: balance;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   font-size: 1.222rem;
@@ -61,6 +74,7 @@
 h2 {
   margin-bottom: 0.25rem;
   text-align: center;
+  text-wrap: balance;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   font-size: 1.0625rem;
@@ -71,6 +85,7 @@ h3 {
   margin-top: 2rem;
   margin-bottom: 0.25rem;
   text-align: center;
+  text-wrap: balance;
   font-size: 1.0625rem;
   line-height: 1.4em;
 
@@ -82,16 +97,19 @@ h3 {
 h4 {
   margin-top: 2rem;
   text-align: center;
+  text-wrap: balance;
   font-size: 1rem;
   line-height: 1.4em;
 }
 
 .entry-content {
-  margin: 0 auto;
-  width: 90%;
-
   p {
     margin-bottom: 2rem;
+  }
+
+  > p:only-child {
+    text-align: center;
+    text-wrap: balance;
   }
 
   strong {
@@ -139,7 +157,12 @@ h4 {
 
   figcaption {
     text-align: center;
+    text-wrap: balance;
     font-style: italic;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
   }
 }
 

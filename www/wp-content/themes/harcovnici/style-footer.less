@@ -5,14 +5,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 6rem;
 
   &::before {
     content: '';
     position: absolute;
     top: 0;
     width: 0.5rem;
-    height: 18rem;
+    height: 15rem;
     background: linear-gradient(
       to bottom,
       rgba(237, 237, 237, 1) 0%,
@@ -31,10 +30,6 @@
   }
 }
 
-.nav-previous + .nav-next {
-  margin-top: 1rem;
-}
-
 .nav-previous,
 .nav-next,
 .wp-block-button.wp-block-button {
@@ -42,12 +37,13 @@
 
   a {
     display: block;
-    padding: 15px 20px;
+    padding: 1em 1.5em;
     border: solid 2px var(--primary);
     border-radius: 4px;
     background-color: var(--bg);
     color: var(--text);
     text-align: center;
+    text-wrap: balance;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.125em;
@@ -69,6 +65,8 @@
 }
 
 .nav-previous {
+  transform: rotate(-0.5deg);
+
   a::before {
     content: '';
     display: inline-block;
@@ -83,6 +81,8 @@
 }
 
 .nav-next {
+  transform: rotate(1deg);
+
   a::after {
     content: '';
     display: inline-block;
