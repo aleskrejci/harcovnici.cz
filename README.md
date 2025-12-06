@@ -12,11 +12,11 @@ Přístupy do [administrace webu](https://harcovnici.cz/wp-admin/) řeší Aleš
 
 ### Přidání fotek na web
 
-Pro přidání nových fotek je třeba se přihlásit na FTP (přístupy u Aleše) a v existující složce `www/fotky` vytvořit novou složku ve formátu `Rok - Název akce` (například `2019 - Podzimní harc`).
+Pro přidání nových fotek je třeba se [přihlásit na FTP](http://webftp.harcovnici.cz) (přístupy u Aleše) a vytvořit novou složku ve formátu `Rok - Název akce` (například `2019 - Podzimní harc`).
 
-Ideální je fotky před nahráním optimalizovat: momentálně používám zmenšení na 2000px na delší straně a kompresi na 80%. Po nahrání se automaticky objeví ve [fotogalerii](https://harcovnici.cz/fotky/). Je dobré nechat si u sebe zálohu ve vyšším rozlišení, většinu z nich má Aleš.
+Ideální je fotky před nahráním optimalizovat: momentálně používám zmenšení na 2000px na delší straně a kompresi na 80%. Po nahrání se automaticky objeví ve [fotogalerii](https://harcovnici.cz/galerie/). Je dobré nechat si u sebe zálohu ve vyšším rozlišení, většinu z nich má Aleš.
 
-Galerie běží na základě [h5ai](https://github.com/lrsjng/h5ai).
+Galerie běží na základě [h5ai](https://github.com/lrsjng/h5ai). Aby fungovalo přihlašování, je třeba zkontrolovat existenci `.htpasswd` v rootu, ten se naschvál neverzuje.
 
 ### Přihlášky na tábor (vzor podle roku '22)
 

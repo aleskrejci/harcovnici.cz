@@ -1,0 +1,9 @@
+DirectoryIndex  index.html  index.php  /galerie/_h5ai/public/index.php
+
+AuthUserFile /data/www/23124/harcovnici_cz/.htpasswd
+AuthName "Uživatel je „harcovnik“. Heslem je odpověď na otázku „Jaký povel se na táboře pojí se zdviženou pěstí?“ (bez diakritiky, malými písmeny)."
+AuthType Basic
+Require valid-user
+Order deny,allow
+
+ErrorDocument 401 /galerie/_h5ai/public/401.html

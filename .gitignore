@@ -2,7 +2,7 @@
 !www/
 
 www/*
-!www/fotky/
+!www/galerie/
 !www/prihlasky/
 !www/wp-content/
 www/wp-content/*
