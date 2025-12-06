@@ -32,6 +32,14 @@ Galerie běží na základě [h5ai](https://github.com/lrsjng/h5ai).
 
 Vše je připraveno, takže stačí nahodit akorát Docker, importovat [DB dump](https://harcovnici.cz/wp-admin/options-general.php?page=updraftplus#updraft-existing-backups-heading), nainstalovat NPM moduly a nastartovat Gulp.
 
+```
+cd www
+docker compose up -d
+# importovat DB dump např. přes Sequel Pro (host: 127.0.0.1; user: user; password: password; db: wordpress)
+npm install
+gulp watch
+```
+
 - V adresáři [www/wp-content/themes/harcovnici/](www/wp-content/themes/harcovnici/) je šablona pro WordPress postavená nad [Blankslate](https://github.com/tidythemes/blankslate).
 - Zbytek se neverzuje a žije si vlastním životem – WP & pluginy se aktualizují automaticky. Idea je zhruba [takováto](https://ales.net/2018/zacinam-s-gitem-verzovani-wordpressu).
 - Databáze a soubory se zálohují na [AWS S3](https://ales.net/2021/wordpress-kompletni-zaloha-webu-na-amazon-s3).
