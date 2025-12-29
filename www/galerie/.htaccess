@@ -1,7 +1,7 @@
 DirectoryIndex  index.html  index.php  /galerie/_h5ai/public/index.php
 
 AuthUserFile /data/www/23124/harcovnici_cz/.htpasswd
-AuthName "Uživatel je „harcovnik“. Heslem je odpověď na otázku „Jaký povel se na táboře pojí se zdviženou pěstí?“ (bez diakritiky, malými písmeny)."
+AuthName "Uživatel je „harcovnik“. Heslem je odpověď (malými písmeny) na otázku „Při jakém povelu harcovník založí ruce a mlčky stojí?“"
 AuthType Basic
 Require valid-user
 Order deny,allow
