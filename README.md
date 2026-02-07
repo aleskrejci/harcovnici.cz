@@ -20,7 +20,7 @@ Galerie běží na základě [h5ai](https://github.com/lrsjng/h5ai). Aby fungova
 
 ### Přihlášky na tábor (vzor podle roku '22)
 
-- Stručným mailem rodičům z předchozího ročníku (minus noví kadeti) posíláme odkaz na [pozvánku](https://harcovnici.cz/tabor/tabor-22/) veřejně přístupnou na webu. V ní jsou všechny podrobnosti a v případě změn ji průběžně aktualizujeme (změny škrtáme a zvýrazňujeme), ať je na ni můžeme vždy odkázat.
+- Stručným mailem rodičům z předchozího ročníku (minus noví kadeti) posíláme odkaz na [pozvánku](https://harcovnici.cz/tabor/) veřejně přístupnou na webu. V ní jsou všechny podrobnosti a v případě změn ji průběžně aktualizujeme (změny škrtáme a zvýrazňujeme), ať je na ni můžeme vždy odkázat.
 - Z pozvánky vede odkaz na [přihlášku = Googlí formulář](https://docs.google.com/forms/d/e/1FAIpQLScROEuhxzQmeC40QFQT0nK52oU8_URWiETt0vcRmFJKnbG1FQ/viewform).
 - Ten sbírá všechna data od rodičů do [tabulky](https://docs.google.com/spreadsheets/d/1v0bnJovwj7cqCte7T0ktITcjVSVSwuGecQGkfhcOHhc/edit).
 - V tabulce je zkopírovaný skript (`Rozšíření > Apps Scripts`), jehož obsah je tu možné vidět v souboru [pdf-generator.gs](www/prihlasky/pdf-generator.gs). Díky němu v nabídce přímo v Google tabulce přibude funkce "Generovat PDF". Nutné je ve skriptu změnit akorát ID šablony a cílové složky (odpovídají alfanumerické změti v URL):
