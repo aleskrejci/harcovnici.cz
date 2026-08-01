@@ -43,10 +43,17 @@
           <path d="m578.2-5c-.9 9.3-4.6 19.1-5.7 25.9-2.1 13.8-13.1 26.7-27.2 35.3-7.6 4.6-14.8 4.8-22.5 2.9s-13.7-3.7-19.6-3c-7.7 1-10.9 2.4-17.3-1.9-3-2-7-4.6-8-8.5s-.4-8.6 1.1-12.9a32.3 32.3 0 0 1 6.1-9.7c1.3-1.5 2.8-3 4.3-4.6 2.9-3.3 5.6-5 9.2-7.5s8.4-2.4 12.4-5 4.8-8 6.2-9.9c.1-.4.3-.8.4-1.1" />
           <path d="m523.8 22.7c-8.6-2.4-19.3-2.8-26.6 3.5-2 1.7-7.4 6.7-7.8 9.4-.6 4.4 5 7.3 7.9 9.6 6.9 5.6 9.3 4.7 17.7 1.2s45-7 40.5-21.6c-1.9-6 8.6-23.2-1.8-28.2-7.3-3.6-11.2 20.1-16.3 22.7-2.3 1.1-11.1 4.1-13.6 3.4z" />
         </svg>
-        <div id="site-title">
-          <?php if (is_front_page() || is_home() || is_front_page() && is_home()) { echo '<h1>'; } ?><a href="<?php echo esc_url(home_url('/')); ?>" rel="home">Harcovníci</a><?php if (is_front_page() || is_home() || is_front_page() && is_home()) { echo '</h1>'; } ?>
+        <div id="branding-text">
+          <div id="site-title">
+            <?php if (is_front_page() || is_home() || is_front_page() && is_home()) { echo '<h1>'; } ?><a href="<?php echo esc_url(home_url('/')); ?>" rel="home">Harcovníci</a><?php if (is_front_page() || is_home() || is_front_page() && is_home()) { echo '</h1>'; } ?>
+          </div>
+          <p id="site-tagline">Turistický tábor ve Valdově, <br>bez elektřiny a&nbsp;signálu</p>
         </div>
-        <p id="site-tagline">Turistický tábor ve Valdově, bez elektřiny a&nbsp;signálu</p>
+        <div id="branding-photos">
+          <div class="polaroid"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/polaroid-1.webp" alt="" width="500" height="500" decoding="async" fetchpriority="high" /></div>
+          <div class="polaroid"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/polaroid-2.webp" alt="" width="500" height="500" decoding="async" fetchpriority="high" /></div>
+          <div class="polaroid"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/polaroid-3.webp" alt="" width="500" height="500" decoding="async" fetchpriority="high" /></div>
+        </div>
       </div>
       <nav id="menu">
         <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
