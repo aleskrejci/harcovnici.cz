@@ -1,22 +1,27 @@
 // Menu
 
-#menu ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  overflow-y: hidden; // because of the transform effect on a:hover
-  width: 100%;
+#menu {
   border-top: 1px solid var(--light-grey);
   border-bottom: 1px solid var(--light-grey);
   background-color: var(--bg);
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 0.75rem;
 
-  @media (max-width: 460px) {
-    overflow-x: auto;
-    justify-content: initial;
-    white-space: nowrap;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-y: hidden; // because of the transform effect on a:hover
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+
+    @media (max-width: 460px) {
+      overflow-x: auto;
+      justify-content: initial;
+      white-space: nowrap;
+    }
   }
 
   li {
