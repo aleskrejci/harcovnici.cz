@@ -6,12 +6,12 @@
   --text-highlight: hsl(0, 0%, 0%);
   --light-grey: hsl(0, 0%, 93%);
 
-  --red1: hsl(0, 100%, 40%);
-  --red2: hsl(0, 100%, 24%);
-  --yellow1: hsl(50, 100%, 46%);
-  --yellow2: hsl(50, 100%, 36%);
-  --green1: hsl(120, 100%, 30%);
-  --green2: hsl(120, 100%, 18%);
+  --red-primary: hsl(0, 100%, 40%);
+  --red-secondary: hsl(0, 100%, 24%);
+  --yellow-primary: hsl(50, 100%, 46%);
+  --yellow-secondary: hsl(50, 100%, 36%);
+  --green-primary: hsl(120, 100%, 30%);
+  --green-secondary: hsl(120, 100%, 18%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,18 +28,18 @@
 }
 
 .color1 {
-  --primary: var(--red1);
-  --secondary: var(--red2);
+  --primary: var(--red-primary);
+  --secondary: var(--red-secondary);
 }
 
 .color2 {
-  --primary: var(--yellow1);
-  --secondary: var(--yellow2);
+  --primary: var(--yellow-primary);
+  --secondary: var(--yellow-secondary);
 }
 
 .color3 {
-  --primary: var(--green1);
-  --secondary: var(--green2);
+  --primary: var(--green-primary);
+  --secondary: var(--green-secondary);
 }
 
 * {
