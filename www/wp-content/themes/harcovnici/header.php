@@ -17,7 +17,7 @@
   <div id="wrapper" class="hfeed">
     <header id="header">
       <div id="branding">
-        <svg viewBox="0 0 600 70" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 600 70" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="m207.1 75a22.8 22.8 0 0 1 7.4-3.4 98.1 98.1 0 0 1 20.1-3.3c7.8-.5 12.7 2.5 15 6.7" />
           <path d="m191 75c1.9-7.2 9.1-9.2 15.9-10.3 9.9-1.5 20.1-2.4 30.1-3.4a27.3 27.3 0 0 1 22 7.9 11.5 11.5 0 0 1 3.3 5.8" />
           <path d="m180.4 75v-.5c.7-11.3 11.5-13.6 21.1-14.5 13.1-1.3 26.2-1.7 39.2-3.3 8.7-1.1 19.2-.5 26.8 4.1 5.6 3.5 7.2 8.9 4.9 14.2" />
@@ -46,6 +46,7 @@
         <div id="site-title">
           <?php if (is_front_page() || is_home() || is_front_page() && is_home()) { echo '<h1>'; } ?><a href="<?php echo esc_url(home_url('/')); ?>" rel="home">Harcovníci</a><?php if (is_front_page() || is_home() || is_front_page() && is_home()) { echo '</h1>'; } ?>
         </div>
+        <p id="site-tagline">Turistický tábor ve Valdově, bez elektřiny a&nbsp;signálu</p>
       </div>
       <nav id="menu">
         <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
